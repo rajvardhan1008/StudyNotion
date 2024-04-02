@@ -4,6 +4,7 @@ import "./App.css"
 import { useDispatch, useSelector } from "react-redux"
 // React Router
 import { Route, Routes, useNavigate } from "react-router-dom"
+import LocomotiveScroll from 'locomotive-scroll';
 
 // Components
 import Navbar from "./components/Common/Navbar"
@@ -47,6 +48,8 @@ function App() {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
+
+  const locomotiveScroll = new LocomotiveScroll();
 
   return (
     <div className="flex min-h-screen w-screen flex-col bg-richblack-900 font-inter">
